@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@layer components {
+  legend {
+    @apply uppercase text-orangeText text-sm font-medium mb-2
+  }
+
+  label {
+    @apply capitalize text-sm font-medium text-blk4
+  }
+
+  input {
+    @apply rounded-md border border-blk1 pl-6
+     py-2 focus:outline-none font-normal text-sm text-blk3 
+  }
+
+  input:not(.email)::placeholder {
+    @apply capitalize
+  }
+
+  input::placeholder {
+    @apply text-blk1 text-sm
+  }
+}
