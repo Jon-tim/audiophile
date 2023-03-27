@@ -8,7 +8,7 @@ import PageProducts from "../components/PageProducts";
 import products from "../data/products.json";
 
 function Earphones() {
-	// console.log(products[0].earphones);
+	console.log(products[0].earphones);
 	// const { earphones } = fetchPageProducts();
 	const [earphones, setEarphones] = useState(products[0].earphones);
 	// useEffect(() => {
