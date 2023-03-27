@@ -5,17 +5,19 @@ import BestGear from "../feature/BestGear";
 import Product from "../feature/Product";
 import PageProducts from "../components/PageProducts";
 // import { fetchPageProducts } from "../functions/fetchPageProducts";
+import products from "../data/products.json";
 
 function Earphones() {
+	// console.log(products[0].earphones);
 	// const { earphones } = fetchPageProducts();
-	const [earphones, setEarphones] = useState(null);
-	useEffect(() => {
-		fetch('../../src/data/products.json')
-			.then((response) => response.json())
-			.then((data) => setEarphones(data[0].earphones));
+	const [earphones, setEarphones] = useState(products[0].earphones);
+	// useEffect(() => {
+	// 	fetch("../../src/data/products.json")
+	// 		.then((response) => response.json())
+	// 		.then((data) => setEarphones(data[0].earphones));
 
-		// console.log(earphones);
-	}, []);
+	// 	// console.log(earphones);
+	// }, []);
 	return (
 		<div>
 			<div className="bg-blk4">
