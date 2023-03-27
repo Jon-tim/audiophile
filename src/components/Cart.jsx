@@ -41,7 +41,7 @@ function Cart() {
           </p>
         </div>
         <Link
-          to={'checkout'}
+          to={'/checkout'}
           className="h-12 w-full grid place-items-center bg-orangeText text-white uppercase"
         >
           checkout
