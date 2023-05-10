@@ -4,11 +4,9 @@ import Footer from "../feature/Footer";
 import BestGear from "../feature/BestGear";
 import Product from "../feature/Product";
 import PageProducts from "../components/PageProducts";
-// import { fetchPageProducts } from "../functions/fetchPageProducts";
 import products from "../data/products.json";
 
 function Speakers() {
-	// const { speakers } = fetchPageProducts();
 	const [speakers, setSpeakers] = useState(products[0].speakers);
 
 	return (

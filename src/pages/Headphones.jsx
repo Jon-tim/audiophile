@@ -4,12 +4,10 @@ import Footer from "../feature/Footer";
 import BestGear from "../feature/BestGear";
 import Product from "../feature/Product";
 import PageProducts from "../components/PageProducts";
-// import { fetchPageProducts } from "../functions/fetchPageProducts";
 
 import products from "../data/products.json";
 
 function Headphones() {
-	// const { headphones } = fetchPageProducts();
 	const [headphones, setHeadphones] = useState(products[0].headphones);
 
 	return (
